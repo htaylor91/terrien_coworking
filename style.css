@@ -1,27 +1,26 @@
 /* Eléments principaux de la page (largeur du site, fond, couleur par défaut du texte) */
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 body {
     background-color: whitesmoke;
     font-family: verdana; 
     color: black;
+    margin: 0;
 }
 
-#block-page {
+.block-page
+{
     width: 100%;
     margin: auto;
-    padding: 10px;
+    background-color: whitesmoke;
+    font-family: verdana; 
+    color: black;
+    margin: 0;
 }
 
-h1 {
-    color: green;
-}
-
-h2, h3 {
+h1, h2, h3 {
     color: black;
 }
 
@@ -30,7 +29,7 @@ h2, h3 {
 .navbar {
     overflow: hidden;
     background-color: rgb(23, 68, 153);
-    color: black;
+    color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -38,9 +37,13 @@ h2, h3 {
     font-size: 20px;
     position: fixed;
     top: 0;
-    width: 100%; /* Full width not working correctly yet */
+    width: 100%;
 
 }
+
+/*.logo {
+    height: 40px;
+}*/
 
     .nav-list {
         list-style-type: none;
@@ -48,23 +51,20 @@ h2, h3 {
 
     .nav-list .menu-item {
         display: inline-block;
-        padding: 10px 10px; 
+        padding: 20px 10px; 
     }
 
     .navbar a {
-        color: white;
         text-decoration: none;
+        color: white;
     }
+
 
 /* Bannière (représentant le photoreel).*/      
 
 .photoreel {
     margin-top: 50px;
     border: 3px blue solid;
-}
-
-h1 {
-    margin-top: 50px;
 }
 
 /*Sections de page d'accueil*/
@@ -92,31 +92,31 @@ h1 {
 /*Sections de page contactez-nous*/
 
 .fieldset {
-    background-color: chartreuse;
+    color:black;
 }
 
 .legend {
-    background-color: chartreuse
+    background-color: whitesmoke;
 }
 
 #nom {
-    background-color: chartreuse
+    background-color: skyblue;
 }
 
 #prenom {
-    background-color: chartreuse
+    background-color: skyblue;
 }
 
 #email {
-    background-color: chartreuse
+    background-color: skyblue;
 }
 
 #tel {
-    background-color: chartreuse
+    background-color: skyblue;
 }
 
 #address {
-    background-color: chartreuse
+    background-color: skyblue;
 }
 
 #sujet {
@@ -126,7 +126,7 @@ h1 {
 }
 
 #message {
-    background-color: chartreuse
+    background-color: skyblue;
 }
 
 :required
