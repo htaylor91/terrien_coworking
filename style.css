@@ -20,15 +20,21 @@ body {
     margin: 0;
 }
 
-h1, h2, h3 {
+h1 {
+    color: green;
+    font-size: 2em;
+}
+
+h2, h3 {
     color: black;
+    font-size: 1.5em;
 }
 
 /* Navigation bar - En-tête et liens de navigation.*/
 
 .navbar {
     overflow: hidden;
-    background-color: rgb(23, 68, 153);
+    background-color: #975ab6;
     color: white;
     display: flex;
     flex-direction: row;
@@ -37,6 +43,7 @@ h1, h2, h3 {
     font-size: 20px;
     top: 0;
     width: 100%;
+    padding: 10px;
 
 }
 
@@ -75,7 +82,7 @@ h1, h2, h3 {
 /* Bannière (représentant le photoreel).*/      
 
 .photoreel {
-    margin-top: 50px;
+    margin-top: 20px;
     border: 3px blue solid;
 }
 
@@ -83,16 +90,27 @@ h1, h2, h3 {
 
 .description {
     position: center;
-    margin-top: 50px;
+    margin-top: 30px;
     border: 3px blue solid;
     width: 100%
- } /* top margin to avoid navbar content overlay - not functioning properly in responsive*/
+ }
 
-.map-container {
+#map-container {
     display: flex;
     justify-content: space-around;
-    margin-top: 50px;
+    margin-top: 30px;
     border: 3px blue solid;
+}
+
+#address-map {
+    border: 2px black solid;
+    margin: 10px 10px;
+
+}
+
+#directions {
+    border: 2px black solid;
+    margin: 10px 10px;
 }
 
 .directions-list {
@@ -262,16 +280,21 @@ footer h1
     color: white;
   }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 767px) {
     .menu {
         display: none;
     }
 
     .hamburger {
         display: block;
-
     }
     
     .block-page {
         width:auto;
     }
+
+    #map-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
