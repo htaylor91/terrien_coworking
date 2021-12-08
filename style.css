@@ -196,22 +196,24 @@ h2, h3 {
 .plan-button {
     display: flex;
     justify-content: center;
-    background-color: lawngreen;
-    margin-top: 50px;
-    border: 3px blue solid;
+    background-color: rgb(66, 183, 187);
+    margin-top: 30px;
+    margin-bottom: 5px;
+    border: 3px black solid;
     padding: 10px;
+    font-size: 2em;
 }
 
 /* Pied de page (footer) */
-.footer-container
+#footer-container
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: white;
     padding-top: 10px;
     padding-bottom: 10px;
-    border: 3px blue solid;
+    border: 3px black solid;
     text-align: center;
 }
 
@@ -220,22 +222,31 @@ footer p, footer ul
     font-size: 0.8em;
 }
 
-footer h1
+footer h3
 {
     font-size: 1.1em;
 }
 
 #footer-logo {
-    width: 25%;
+    display: flex;
+    flex-direction: column;
+    border: 3px black solid; 
+    width: 35%;
 }
 
 #footer-links {
-    background-color: gray;
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: pink;
+    border: 3px black solid;
+    font-size: 0.8em; 
+    width: 30%;
 }
 
 #footer-social {
-    width: 25%
+    border: 3px black solid; 
+    width: 35%;
 }
 
 /* Style all font awesome icons */
@@ -280,7 +291,7 @@ footer h1
     color: white;
   }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
     .menu {
         display: none;
     }
@@ -297,4 +308,30 @@ footer h1
         display: flex;
         flex-direction: column;
     }
+
+    #address-map {
+        margin: auto;
+    }
+
+    #directions {
+        margin: auto;
+    }
+
+    #footer-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #footer-logo {
+        margin: auto;
+    }
+
+    #footer-links {
+        margin: auto;
+    }
+    
+    #footer-social {
+        margin: auto;
+    }
+
 }
