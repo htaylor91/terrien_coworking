@@ -32,7 +32,7 @@ h1, h2, h3 {
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     font-size: 20px;
     position: fixed;
@@ -41,22 +41,35 @@ h1, h2, h3 {
 
 }
 
-/*.logo {
-    height: 40px;
-}*/
-
-    .nav-list {
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
         list-style-type: none;
     }
 
-    .nav-list .menu-item {
+    .menu .menu-item a {
         display: inline-block;
         padding: 20px 10px; 
     }
 
-    .navbar a {
+    .menu-item a {
         text-decoration: none;
         color: white;
+    }
+
+    .hamburger {
+        background-color: transparent;
+        border: 0;
+        display: none;
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    .hamburger:focus {
+        outline: none;
     }
 
 
@@ -67,7 +80,7 @@ h1, h2, h3 {
     border: 3px blue solid;
 }
 
-/*Sections de page d'accueil*/
+/*autre Sections de page d'accueil*/
 
 .description {
     position: center;
@@ -249,3 +262,13 @@ footer h1
     background: #8a3ab9;
     color: white;
   }
+
+@media screen and (max-width: 767px) {
+    .menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+
+    }
