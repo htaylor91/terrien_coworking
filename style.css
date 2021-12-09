@@ -17,6 +17,7 @@ body {
     font-family: verdana; 
     color: black;
     margin: 0;
+    background-color: #171738;
 }
 
 h1 {
@@ -45,6 +46,11 @@ h2, h3 {
     padding: 10px;
 
 }
+
+    .nav-logo {
+        max-width:12%;
+        height:auto;
+    }
 
     .menu {
         display: flex;
@@ -87,8 +93,11 @@ h2, h3 {
 .description {
     position: center;
     margin-top: 30px;
+    padding: 3em;
     border: 3px blue solid;
+    background-color: #F5F5F5;
     width: 100%
+    ;
 
  }
 
@@ -97,18 +106,22 @@ h2, h3 {
     justify-content: space-around;
     margin-top: 30px;
     border: 3px blue solid;
-    background-color: #F5F5F5;
+    background-color: #171738;
 }
 
 #address-map {
     border: 2px black solid;
     margin: 10px 10px;
+    padding: 1em;
+    background-color: #F5F5F5;
 
 }
 
 #directions {
     border: 2px black solid;
     margin: 10px 10px;
+    padding: 1em;
+    background-color: #F5F5F5;
 }
 
 .directions-list {
@@ -231,6 +244,8 @@ h2, h3 {
     text-align: center;
 }
 
+
+
 footer p, footer ul, footer a
 {
     font-size: 0.8em;
@@ -243,11 +258,15 @@ footer h3
     color: white;
 }
 
-#footer-logo {
+#footer-logo-container {
     display: flex;
     flex-direction: column;
     border: 3px white solid; 
     width: 35%;
+}
+
+.footer-logo {
+    width: auto;
 }
 
 #footer-links {
@@ -264,6 +283,7 @@ footer h3
     border: 3px white solid; 
     color: white;
     width: 35%;
+
 }
 
 /* Style all font awesome icons */
