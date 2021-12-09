@@ -55,14 +55,11 @@ h2, h3 {
         list-style-type: none;
     }
 
-    .menu .menu-item a {
-        display: inline-block;
-        padding: 20px 10px; 
-    }
-
     .menu-item a {
         text-decoration: none;
         color: white;
+        display: inline-block;
+        padding: 20px 10px; 
     }
 
     .hamburger {
@@ -291,6 +288,9 @@ footer h3
     color: white;
   }
 
+
+
+
 @media screen and (max-width: 800px) {
     .menu {
         display: none;
@@ -311,10 +311,12 @@ footer h3
 
     #address-map {
         margin: auto;
+        width: 100%;
     }
 
     #directions {
         margin: auto;
+        width: 100%;
     }
 
     #footer-container {
@@ -324,14 +326,17 @@ footer h3
 
     #footer-logo {
         margin: auto;
+        width: 100%;
     }
 
     #footer-links {
         margin: auto;
+        width: 100%;
     }
     
     #footer-social {
         margin: auto;
+        width: 100%;
     }
 
 }
