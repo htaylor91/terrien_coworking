@@ -14,19 +14,18 @@ body {
 {
     width: 100%;
     margin: auto;
-    background-color: whitesmoke;
     font-family: verdana; 
     color: black;
     margin: 0;
 }
 
 h1 {
-    color: green;
+    color: #171738;
     font-size: 2em;
 }
 
 h2, h3 {
-    color: black;
+    color: #171738;
     font-size: 1.5em;
 }
 
@@ -34,7 +33,7 @@ h2, h3 {
 
 .navbar {
     overflow: hidden;
-    background-color: #975ab6;
+    background-color: #6B48AD;
     color: white;
     display: flex;
     flex-direction: row;
@@ -90,6 +89,7 @@ h2, h3 {
     margin-top: 30px;
     border: 3px blue solid;
     width: 100%
+
  }
 
 #map-container {
@@ -97,6 +97,7 @@ h2, h3 {
     justify-content: space-around;
     margin-top: 30px;
     border: 3px blue solid;
+    background-color: #F5F5F5;
 }
 
 #address-map {
@@ -190,15 +191,31 @@ h2, h3 {
 }
 
 /*planifier une réunion div */
+
+.plan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #171738;
+}
+
 .plan-button {
     display: flex;
     justify-content: center;
-    background-color: rgb(66, 183, 187);
-    margin-top: 30px;
-    margin-bottom: 5px;
-    border: 3px black solid;
-    padding: 10px;
-    font-size: 2em;
+    background-color: #D81E5B;
+    color:white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 10px #6B48AD solid;
+    padding: 1em;
+    font-size: 1.5em;
+    width: 30%;
+}
+
+.plan-button a {
+    color:white;
+    text-decoration: wavy;
+    text-align: center;
 }
 
 /* Pied de page (footer) */
@@ -207,27 +224,29 @@ h2, h3 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: white;
+    background-color: #171738;
     padding-top: 10px;
     padding-bottom: 10px;
-    border: 3px black solid;
+    border: 3px white solid;
     text-align: center;
 }
 
-footer p, footer ul
+footer p, footer ul, footer a
 {
     font-size: 0.8em;
+    color: white;
 }
 
 footer h3
 {
     font-size: 1.1em;
+    color: white;
 }
 
 #footer-logo {
     display: flex;
     flex-direction: column;
-    border: 3px black solid; 
+    border: 3px white solid; 
     width: 35%;
 }
 
@@ -235,14 +254,15 @@ footer h3
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: pink;
-    border: 3px black solid;
+    border: 3px white solid;
     font-size: 0.8em; 
+    color: white;
     width: 30%;
 }
 
 #footer-social {
-    border: 3px black solid; 
+    border: 3px white solid; 
+    color: white;
     width: 35%;
 }
 
