@@ -47,10 +47,10 @@ h2, h3 {
 
 }
 
-    .nav-logo {
+    /*.nav-logo {
         max-width:12%;
         height:auto;
-    }
+    }*/
 
     .menu {
         display: flex;
@@ -260,29 +260,34 @@ footer h3
 
 #footer-logo-container {
     display: flex;
-    flex-direction: column;
-    border: 3px white solid; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
     width: 35%;
 }
 
-.footer-logo {
-    width: auto;
+#footer-logo {
+    width: 100%;
+    border: none;
 }
 
 #footer-links {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 3px white solid;
     font-size: 0.8em; 
     color: white;
     width: 30%;
 }
 
 #footer-social {
-    border: 3px white solid; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     color: white;
     width: 35%;
+    
 
 }
 
@@ -364,7 +369,7 @@ footer h3
         flex-direction: column;
     }
 
-    #footer-logo {
+    #footer-logo-container {
         margin: auto;
         width: 100%;
     }
