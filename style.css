@@ -32,7 +32,7 @@ h2, h3 {
 
 /* Navigation bar - En-tête et liens de navigation.*/
 
-.navbar {
+.nav {
     overflow: hidden;
     background-color: #6B48AD;
     color: white;
@@ -47,16 +47,16 @@ h2, h3 {
 
 }
 
-    /*.nav-logo {
-        max-width:12%;
+    /*nav_logo {
+        max-width: ;
         height:auto;
     }*/
 
-    .navbar h1 {
+    .nav_title {
         font-size: 1em;
     }
 
-    .menu {
+    .nav_list {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -64,12 +64,13 @@ h2, h3 {
         list-style-type: none;
     }
 
-    .menu-item a {
+    .nav_list--item a {
         text-decoration: none;
         color: white;
         display: inline-block;
         padding: 20px 10px; 
     }
+
 
     .hamburger {
         background-color: transparent;
@@ -292,6 +293,7 @@ footer h3
     text-align: center;
     text-decoration: none;
     margin: 2px 2px;
+    color: white;
   }
   
   /* Add a hover effect if you want */
@@ -303,31 +305,26 @@ footer h3
   
   .fa-github {
     background: #000000;
-    color: white;
   }
 
   .fa-facebook {
     background: #3B5998;
-    color: white;
   }
   
   .fa-twitter {
     background: #55ACEE;
-    color: white;
   }
 
   .fa-linkedin {
     background: #007bb5;
-    color: white;
   }
 
   .fa-instagram {
     background: #8a3ab9;
-    color: white;
   }
 
 @media screen and (max-width: 1080px) {
-    .menu {
+    .nav_list {
         display: none;
     }
 
