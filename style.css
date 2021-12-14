@@ -191,39 +191,8 @@ h2, h3 {
 
 /*Sections de page mentions légales de page politique de confidentialité*/
 
-
-
-
-/*planifier une réunion div */
-
-.plan {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: #171738;
-}
-
-.plan-button {
-    display: flex;
-    justify-content: center;
-    background-color: #D81E5B;
-    color:white;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 10px #6B48AD solid;
-    padding: 1em;
-    font-size: 1.5em;
-    width: 30%;
-}
-
-.plan-button a {
-    color:white;
-    text-decoration: wavy;
-    text-align: center;
-}
-
 /* Pied de page (footer) */
-#footer-container
+.footer
 {
     display: flex;
     flex-direction: column;
@@ -231,13 +200,11 @@ h2, h3 {
     align-content: center;
     align-items: center;
     background-color: #171738;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: 3px white solid;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border: 0.2em white solid;
     text-align: center;
 }
-
-
 
 footer p, footer ul, footer a
 {
@@ -245,13 +212,40 @@ footer p, footer ul, footer a
     color: white;
 }
 
+footer h2 a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #8EF9F3;
+}
 footer h3
 {
     font-size: 1.1em;
     color: white;
 }
 
-#footer-links {
+/*planifier une réunion div */
+
+.footer_button {
+    display: flex;
+    justify-content: center;
+    background-color: #D81E5B;
+    color:white;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    border: 0.2em #6B48AD solid;
+    padding: 1em;
+    font-size: 2.5em;
+    width: 30%;
+}
+
+.footer_button a {
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+.footer_legal {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -260,7 +254,7 @@ footer h3
     width: 50%;
 }
 
-#footer-social {
+.footer_social {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -273,12 +267,12 @@ footer h3
 
 /* Style all font awesome icons */
 .fa {
-    padding: 10px;
-    font-size: 30px;
-    width: 50px;
+    padding: 0.5em;
+    font-size: 1.5em;
+    width: 2.5em;
     text-align: center;
     text-decoration: none;
-    margin: 2px 2px;
+    margin: 0.2em 0.2em;
     color: white;
   }
   
@@ -344,17 +338,17 @@ footer h3
         width: 100%;
     }
 
-    #footer-container {
-        display: flex;
-        flex-direction: column;
+    .footer_button {
+        margin: auto;
+        width: 80%;
     }
 
-    #footer-links {
+    .footer_legal {
         margin: auto;
         width: 100%;
     }
     
-    #footer-social {
+    .footer_social {
         margin: auto;
         width: 100%;
     }
