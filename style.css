@@ -134,6 +134,22 @@ h2, h3 {
 
 /*Sections de page de nos services*/
 
+/* TWO COLUMN FLEXBOX */
+.two-column {
+    display:flex;
+    flex-direction:row;
+  }
+
+
+.two-column div {
+    border:1em solid #8EF9F3; 
+    flex:1; 
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+  }
+
 /*Sections de page contactez-nous*/
 
 .fieldset {
@@ -337,7 +353,11 @@ footer h3
         margin: auto;
         width: 100%;
     }
-
+/*nos services*/
+    .two-column {
+        flex-direction: column;
+    }
+/*footer*/
     .footer_button {
         margin: auto;
         width: 80%;
