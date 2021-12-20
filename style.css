@@ -4,20 +4,11 @@
 }
 
 body {
-    background-color: whitesmoke;
     font-family: verdana; 
-    color: black;
-    margin: 0;
-}
-
-.block-page
-{
-    width: 100%;
-    margin: auto;
-    font-family: verdana; 
-    color: black;
-    margin: 0;
     background-color: #171738;
+    color:black;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -33,10 +24,6 @@ h2, h3 {
 
 /* Navigation bar - En-tête et liens de navigation.*/
 
-input [type=checkbox] {
-    display: none;
-   } 
-
 .nav {
     overflow: hidden;
     background-color: #6B48AD;
@@ -45,49 +32,54 @@ input [type=checkbox] {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.2em;
-    top: 0;
+    font-size: 20px;
+}
+
+.logo {
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav-menu {
+    list-style-type: none;
+    text-align: right;
     width: 100%;
-    padding: 10px;
+}
+
+.nav-menu .list {
+    display: inline-block;
+    padding: 20px 10px; 
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #8EF9F3;
+}
+
+#hamburger-container {
+    background-color: transparent;
+    display: none;
+    border: 0;
+    color: white;
+    cursor: pointer;
 
 }
 
-    /*nav_logo {
-        max-width: ;
-        height:auto;
-    }*/
+#hamburger-container:focus {
+    outline: none;
+}
 
-    .nav_title {
-        font-size: 1.2em;
-    }
-
-    .nav_list {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-        list-style-type: none;
-    }
-
-    .nav_list--item a {
-        text-decoration: none;
-        color: white;
-        display: inline-block;
-        padding: 20px 10px; 
-    }
-
-    .hamburger {
-        background-color: transparent;
-        border: 0;
-        display: none;
-        color: white;
-        cursor: pointer;
-        font-size: 20px;
-    }
-
-    .hamburger:focus {
-        outline: none;
-    }
+.ham-line {
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin-top: 4px;
+}
 
 
 /* Bannière (représentant le photoreel).*/      
@@ -116,21 +108,27 @@ input [type=checkbox] {
 .two-column {
     display:flex;
     flex-direction:row;
-    background-color: whitesmoke;
     position: center;
-    
     border: 2em #171738 solid;
     width: 100%
 }
 
 .two-column div {
+    flex: 1;
     border:1em solid #8EF9F3; 
-    flex:1; 
     display:flex;
-    justify-content: space-between;
-    align-items:center;
-    text-align: left;
+    justify-content:left;
+    align-items:flex-start;
+    background-color: whitesmoke;
+    padding: 0.3em;
 
+}
+
+#service-picture-container {
+    border: none; 
+    background-color: #171738;
+    justify-content: center;
+    align-items: center;
 }
 
 .article {
@@ -150,21 +148,15 @@ input [type=checkbox] {
 
 /*Sections de page de nos services*/
 
-/* TWO COLUMN FLEXBOX 
-.two-column {
-    display:flex;
-    flex-direction:row;
-  }
+#price {
+    font-size: 2em;
+    color: #D81E5B;
+    font-weight: bold;
+}
 
-
-.two-column div {
-    border:1em solid #8EF9F3; 
-    flex:1; 
-    display:flex;
-    justify-content: space-between;
-    align-items:center;
-    text-align: left;
-  }*/
+.list_services {
+    list-style-type:disc;
+}
 
 /*Sections de page contactez-nous*/
 
@@ -336,15 +328,47 @@ footer h3
     background: #8a3ab9;
   }
 
-@media screen and (max-width: 1080px) {
-    .nav_list {
+@media all and (max-width: 767px) {
+
+    /*navigation*/
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav .container-logo {
+        width: 100%;
+    }
+
+    .logo {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    #hamburger-container {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+
+    .nav-menu {
+        list-style-type: none;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
         display: none;
     }
 
-    .hamburger {
+    .nav-menu .list {
+        display: block;
+        border-top: 1px solid white;
+    }
+
+    .active {
         display: block;
     }
-    
+
+    /*block page*/
     .block-page {
         width:auto;
     }
