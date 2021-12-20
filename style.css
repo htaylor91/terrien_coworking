@@ -8,7 +8,7 @@ body {
     background-color: #171738;
     color:black;
     margin: 0;
-    padding: 0;
+    
 }
 
 h1 {
@@ -361,17 +361,14 @@ footer h3
 
     .nav-menu .list {
         display: block;
-        border-top: 1px solid white;
+        border-top: 1px solid transparent;
     }
 
     .active {
         display: block;
     }
 
-    /*block page*/
-    .block-page {
-        width:auto;
-    }
+
 
     /*.hero*/
 
