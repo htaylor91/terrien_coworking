@@ -105,30 +105,13 @@ h2, h3 {
      flex-direction: column;
  }
 
-.two-column {
+ .two-column-home {
     display:flex;
     flex-direction:row;
     position: center;
     border: 2em #171738 solid;
-    width: 100%
-}
-
-.two-column div {
-    flex: 1;
-    border:1em solid #8EF9F3; 
-    display:flex;
-    justify-content:left;
-    align-items:flex-start;
+    width: 100%;
     background-color: whitesmoke;
-    padding: 0.3em;
-
-}
-
-#service-picture-container {
-    border: none; 
-    background-color: #171738;
-    justify-content: center;
-    align-items: center;
 }
 
 .article {
@@ -157,6 +140,38 @@ h2, h3 {
 .list_services {
     list-style-type:disc;
 }
+
+.two-column {
+    display:flex;
+    flex-direction:row;
+    position: center;
+    border: 2em #171738 solid;
+    width: auto;
+}
+
+.service-description {
+    flex: 1;
+    border: 0.8em solid #8EF9F3; 
+    display:flex;
+    justify-content:left;
+    align-items:flex-start;
+    background-color: whitesmoke;
+    padding: 0.3em;
+}
+
+.service-picture-container {
+    flex: 1; /*editing this out makes img small and left*/
+    border: 0.8em solid #D81E5B;
+    display: flex;
+    background-color: #171738;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-picture-container img {
+    flex-grow: 1;
+}
+
 
 /*Sections de page contactez-nous*/
 
@@ -368,9 +383,11 @@ footer h3
         display: block;
     }
 
-
-
     /*.hero*/
+
+    .two-column-home {
+        flex-direction: column;
+    }
 
     .article {
         display: flex;
