@@ -122,11 +122,11 @@ p {
     padding-left: 1em;
 }
 
-/*.article_map {
-    border: 1em #8EF9F3 solid;
+.article_map {
+    border: 1em transparent solid;
     display: flex;
     flex: 1;
-}*/
+}
 
 .list_directions {
     list-style-type: none;
