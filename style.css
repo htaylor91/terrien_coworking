@@ -5,32 +5,31 @@
 
 body {
     font-family: verdana; 
-    background-color: #171738;
-    color:black;
+    background-color: #F1F1F9;
+    color: #12122B;
     margin: 0;
     
 }
 
 h1 {
-    color: #8EF9F3;
-    font-size: 2em;
+    font-size: 3em;
     padding-left: 1em;
+    text-align: center;
 }
 
 h2, h3 {
-    color: #171738;
-    font-size: 1.5em;
+    font-size: 2.2em;
 }
 
 p {
-    font-size: 1.1em;;
+    font-size: 1.5em;;
 }
 
 /* Navigation bar - En-tête et liens de navigation.*/
 
 .nav {
     overflow: hidden;
-    background-color: #6B48AD;
+    background-color: #12122B;
     color: white;
     display: flex;
     flex-direction: row;
@@ -59,6 +58,7 @@ p {
 .nav a {
     color: white;
     text-decoration: none;
+    font-size: 1.5em;
 }
 
 .nav a:hover {
@@ -95,12 +95,11 @@ p {
 
 /*autre Sections de page d'accueil*/
 .hero {
-    background-color: whitesmoke;
     display: flex;
     position: center;
     margin-top: 1em;
     padding: 0.8em;
-    border: 2em #171738 solid;
+    /*border: 2em #171738 solid;*/
     width: 100%
  }
 
@@ -113,9 +112,9 @@ p {
     display:flex;
     flex-direction:row;
     position: center;
-    border: 2em #171738 solid;
+    /*border: 2em #171738 solid;*/
     width: 100%;
-    background-color: whitesmoke;
+    /*background-color: whitesmoke;*/
 }
 
 .article {
@@ -123,11 +122,11 @@ p {
     padding-left: 1em;
 }
 
-.article_map {
+/*.article_map {
     border: 1em #8EF9F3 solid;
     display: flex;
     flex: 1;
-}
+}*/
 
 .list_directions {
     list-style-type: none;
@@ -149,7 +148,7 @@ p {
     display:flex;
     flex-direction:row;
     position: center;
-    border: 2em #171738 solid;
+    /*border: 2em #171738 solid;*/
     width: auto;
 }
 
@@ -164,24 +163,24 @@ p {
 }
 
 .service-description-span {
-    background-color: whitesmoke;
+    /*background-color: whitesmoke;*/
     padding: 0.5em;
-    border: 0.5em solid #8EF9F3;
+    border: 0.5em solid transparent;
 }
 
 .service-picture-container {
     flex: 1; /*editing this out makes img small and left*/
     /*border: 0.8em solid #D81E5B;*/
     display: flex;
-    background-color: #171738;
+    /*background-color: #171738;*/
     justify-content: center;
     align-items: center;
 }
 
-.service-picture-container img {
-    flex-grow: 1;
-    max-width: 100%;
+.service-picture {
+    width: 100%;
     height: auto;
+    max-width: 60vh;
 }
 
 
@@ -251,7 +250,7 @@ p {
     justify-content: center;
     align-content: center;
     align-items: center;
-    background-color: #171738;
+    background-color: #12122B;
     padding-top: 1em;
     padding-bottom: 1em;
     border: 0.2em white transparent;
@@ -267,7 +266,6 @@ footer p, footer ul, footer a
 footer h2 a {
     text-decoration: none;
     font-size: 1.2em;
-    color: #8EF9F3;
 }
 footer h3
 {
@@ -281,17 +279,17 @@ footer h3
     display: flex;
     justify-content: center;
     background-color: #D81E5B;
-    color:white;
+    color:#12122B;
     margin-top: 0.3em;
     margin-bottom: 0.3em;
-    border: 0.2em #6B48AD solid;
+    border: 0.2em transparent solid;
     padding: 1em;
     font-size: 2.5em;
     width: 30%;
 }
 
 .footer_button a {
-    color:white;
+    color:#12122B;
     font-weight: bold;
     text-decoration: none;
     text-align: center;
@@ -313,8 +311,6 @@ footer h3
     align-items: center;
     color: white;
     width: 50%;
-    
-
 }
 
 /* Style all font awesome icons */
@@ -416,6 +412,15 @@ footer h3
 /*nos services*/
     .two-column {
         flex-direction: column;
+    }
+
+    .service-picture {
+        width: 100%;
+        height: auto;
+    }
+
+    .service-description {
+       text-align: center;
     }
 
 /*footer*/
