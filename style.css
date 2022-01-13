@@ -22,6 +22,10 @@ h2, h3 {
     font-size: 1.5em;
 }
 
+p {
+    font-size: 1.1em;;
+}
+
 /* Navigation bar - En-tête et liens de navigation.*/
 
 .nav {
@@ -151,17 +155,23 @@ h2, h3 {
 
 .service-description {
     flex: 1;
-    border: 0.8em solid #8EF9F3; 
+    /*border: 0.8em solid #8EF9F3; */
     display:flex;
     justify-content:left;
     align-items:flex-start;
+    /*background-color: whitesmoke;*/
+    /*padding: 0.3em;*/
+}
+
+.service-description-span {
     background-color: whitesmoke;
-    padding: 0.3em;
+    padding: 0.5em;
+    border: 0.5em solid #8EF9F3;
 }
 
 .service-picture-container {
     flex: 1; /*editing this out makes img small and left*/
-    border: 0.8em solid #D81E5B;
+    /*border: 0.8em solid #D81E5B;*/
     display: flex;
     background-color: #171738;
     justify-content: center;
@@ -170,6 +180,8 @@ h2, h3 {
 
 .service-picture-container img {
     flex-grow: 1;
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -405,6 +417,7 @@ footer h3
     .two-column {
         flex-direction: column;
     }
+
 /*footer*/
     .footer_button {
         margin: auto;
