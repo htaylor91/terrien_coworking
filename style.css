@@ -15,10 +15,19 @@ h1 {
     font-size: 3em;
     padding-left: 1em;
     text-align: center;
+    color: #D81E5B;
 }
 
-h2, h3 {
-    font-size: 2.2em;
+h2 {
+    font-size: 2.1em;
+}
+
+.centered-header {
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8em;
 }
 
 p {
@@ -30,7 +39,7 @@ p {
 .nav {
     overflow: hidden;
     background-color: #12122B;
-    color: white;
+    color: #F1F1F9;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -56,7 +65,7 @@ p {
 }
 
 .nav a {
-    color: white;
+    color: #F1F1F9;
     text-decoration: none;
     font-size: 1.5em;
 }
@@ -69,7 +78,7 @@ p {
     background-color: transparent;
     display: none;
     border: 0;
-    color: white;
+    color: #F1F1F9;
     cursor: pointer;
 
 }
@@ -81,16 +90,118 @@ p {
 .ham-line {
     width: 20px;
     height: 3px;
-    background-color: white;
+    background-color: #F1F1F9;
     margin-top: 4px;
 }
 
+/* Slideshow*/      
 
-/* Bannière (représentant le photoreel).*/      
+.mySlides {display: none}
 
-.photoreel {
-    margin-top: 20px;
-    border: 10px #171738 solid;
+.slideshow-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: center;
+    margin: auto;
+}
+
+.slideshow-image {
+    height: 50vh;
+    max-width: 50vw;
+    justify-content: center;
+}
+
+.mySlides {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+/* Slideshow navigation buttons */
+
+.slideshow-navigation-container {
+    display: flex;
+    justify-content: center;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 1em;
+    margin-top: -1.5em;
+    color: #12122B;
+    font-weight: bold;
+    font-size: 2em;
+    transition: 0.6s ease;
+    user-select: none;
+  }
+  
+.next {
+  right: 0;
+}
+
+.prev {
+    left: 0;
+  }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #d71d5bcc;
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 1.3em;
+  padding: 0.8em 1em;
+  bottom: 0.8em;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+/* The dots/bullets/indicators */
+
+.dot-container {
+    display: flex;
+    justify-content: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 1.1em;
+  width: 1.1em;
+  margin: 0 2px;
+  background-color: #12122B;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #12122B;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
 /*autre Sections de page d'accueil*/
@@ -99,22 +210,20 @@ p {
     position: center;
     margin-top: 1em;
     padding: 0.8em;
-    /*border: 2em #171738 solid;*/
     width: 100%
  }
 
  .contact {
      display: flex;
-     flex-direction: column;
+     flex-direction: row;
+     justify-content: center;
  }
 
  .two-column-home {
     display:flex;
     flex-direction:row;
     position: center;
-    /*border: 2em #171738 solid;*/
     width: 100%;
-    /*background-color: whitesmoke;*/
 }
 
 .article {
@@ -148,31 +257,24 @@ p {
     display:flex;
     flex-direction:row;
     position: center;
-    /*border: 2em #171738 solid;*/
     width: auto;
 }
 
 .service-description {
     flex: 1;
-    /*border: 0.8em solid #8EF9F3; */
     display:flex;
     justify-content:left;
     align-items:flex-start;
-    /*background-color: whitesmoke;*/
-    /*padding: 0.3em;*/
 }
 
 .service-description-span {
-    /*background-color: whitesmoke;*/
     padding: 0.5em;
     border: 0.5em solid transparent;
 }
 
 .service-picture-container {
     flex: 1; /*editing this out makes img small and left*/
-    /*border: 0.8em solid #D81E5B;*/
     display: flex;
-    /*background-color: #171738;*/
     justify-content: center;
     align-items: center;
 }
@@ -187,12 +289,12 @@ p {
 /*Sections de page contactez-nous*/
 
 .fieldset {
-    color:black;
+    color: #12122B;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .legend {
-    background-color: whitesmoke;
+    background-color: #F1F1F9;
 }
 
 #nom {
@@ -227,12 +329,12 @@ p {
 
 :required
 {
-    background-color: whitesmoke;
+    background-color: #F1F1F9;
 }
 
 :invalid
 {
-    background-color: whitesmoke;
+    background-color: #F1F1F9;
 }
 
 :focus
@@ -253,14 +355,14 @@ p {
     background-color: #12122B;
     padding-top: 1em;
     padding-bottom: 1em;
-    border: 0.2em white transparent;
+    border: 0.2em solid transparent;
     text-align: center;
 }
 
 footer p, footer ul, footer a
 {
     font-size: 0.8em;
-    color: white;
+    color: #F1F1F9;
 }
 
 footer h2 a {
@@ -270,7 +372,7 @@ footer h2 a {
 footer h3
 {
     font-size: 1.1em;
-    color: white;
+    color: #F1F1F9;
 }
 
 /*planifier une réunion div */
@@ -300,7 +402,7 @@ footer h3
     flex-direction: column;
     justify-content: center;
     font-size: 0.8em; 
-    color: white;
+    color: #F1F1F9;
     width: 50%;
 }
 
@@ -309,7 +411,7 @@ footer h3
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #F1F1F9;
     width: 50%;
 }
 
@@ -321,7 +423,7 @@ footer h3
     text-align: center;
     text-decoration: none;
     margin: 0.2em 0.2em;
-    color: white;
+    color: #F1F1F9;
   }
   
   /* Add a hover effect if you want */
@@ -353,7 +455,7 @@ footer h3
 
 @media all and (max-width: 767px) {
 
-    /*navigation*/
+/*navigation*/
     .nav {
         flex-direction: column;
     }
@@ -391,7 +493,11 @@ footer h3
         display: block;
     }
 
-    /*.hero*/
+/*slideshow / photoreel*/
+
+.prev, .next, .text {font-size: 1em}
+  
+/*.hero*/
 
     .two-column-home {
         flex-direction: column;
@@ -409,6 +515,7 @@ footer h3
         width: 100%;
         height: auto;
     }
+
 /*nos services*/
     .two-column {
         flex-direction: column;
