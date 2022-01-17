@@ -13,7 +13,7 @@ body {
 
 h1 {
     font-size: 3em;
-    padding-left: 1em;
+   
     text-align: center;
     color: #D81E5B;
 }
@@ -44,11 +44,12 @@ p {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    font-size: 20px;
+    font-size: 1.3em;
 }
 
 .logo {
-    height: 40px;
+    height: 100%;
+    width: 300%;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -67,11 +68,11 @@ p {
 .nav a {
     color: #F1F1F9;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .nav a:hover {
-    color: #8EF9F3;
+    color: #D81E5B;
 }
 
 #hamburger-container {
@@ -96,35 +97,29 @@ p {
 
 /* Slideshow*/      
 
-.mySlides {display: none}
-
-.slideshow-container {
+/*#slideshow-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     position: center;
     margin: auto;
+}*/
+
+.mySlides {display: none}
+
+.mySlides {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
 }
 
 .slideshow-image {
     height: 50vh;
     max-width: 50vw;
-    justify-content: center;
-}
-
-.mySlides {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
 }
 
 /* Slideshow navigation buttons */
-
-.slideshow-navigation-container {
-    display: flex;
-    justify-content: center;
-}
 
 .prev, .next {
     cursor: pointer;
@@ -132,7 +127,7 @@ p {
     top: 50%;
     width: auto;
     padding: 1em;
-    margin-top: -1.5em;
+    margin-top: 5em;
     color: #12122B;
     font-weight: bold;
     font-size: 2em;
@@ -155,14 +150,14 @@ p {
 
 /* Caption text */
 .text {
-  color: black;
-  font-size: 1.3em;
-  padding: 0.8em 1em;
-  bottom: 0.8em;
-  width: 100%;
-  text-align: center;
-  justify-content: center;
-}
+    color: black;
+    font-size: 1.3em;
+    padding: 0.8em 1em;
+    bottom: 0.8em;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
 
 /* The dots/bullets/indicators */
 
@@ -213,13 +208,13 @@ p {
     width: 100%
  }
 
- .contact {
+.contact {
      display: flex;
      flex-direction: row;
      justify-content: center;
  }
 
- .two-column-home {
+.two-column-home {
     display:flex;
     flex-direction:row;
     position: center;
@@ -229,6 +224,7 @@ p {
 .article {
     padding-right: 1em;
     padding-left: 1em;
+    flex: 1;
 }
 
 .article_map {
@@ -242,6 +238,19 @@ p {
 }
 
 /*Sections de page de nos services*/
+
+.hero-container-one {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.hero-container-two {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+}
 
 #price {
     font-size: 2em;
@@ -285,12 +294,12 @@ p {
     max-width: 60vh;
 }
 
-
 /*Sections de page contactez-nous*/
 
 .fieldset {
     color: #12122B;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana;
+    font-size: 1.3em;
 }
 
 .legend {
@@ -369,6 +378,13 @@ footer h2 a {
     text-decoration: none;
     font-size: 1.2em;
 }
+
+footer h2 a:hover {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #D81E5B;
+}
+
 footer h3
 {
     font-size: 1.1em;
@@ -384,7 +400,7 @@ footer h3
     color:#12122B;
     margin-top: 0.3em;
     margin-bottom: 0.3em;
-    border: 0.2em transparent solid;
+    border: 0.2em solid transparent;
     padding: 1em;
     font-size: 2.5em;
     width: 30%;
@@ -397,6 +413,10 @@ footer h3
     text-align: center;
 }
 
+.footer_button a:hover {
+    color: #F1F1F9;
+}
+
 .footer_legal {
     display: flex;
     flex-direction: column;
@@ -404,6 +424,10 @@ footer h3
     font-size: 0.8em; 
     color: #F1F1F9;
     width: 50%;
+}
+
+.footer_legal a:hover {
+    color: #D81E5B;
 }
 
 .footer_social {
@@ -453,7 +477,7 @@ footer h3
     background: #8a3ab9;
   }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 900px) {
 
 /*navigation*/
     .nav {
@@ -462,9 +486,12 @@ footer h3
 
     .nav .container-logo {
         width: 100%;
+        justify-content: center;
     }
 
     .logo {
+        width: 50%;
+        height: 50%;
         margin-top: 10px;
         margin-left: 10px;
     }
@@ -493,7 +520,7 @@ footer h3
         display: block;
     }
 
-/*slideshow / photoreel*/
+/*slideshow*/
 
 .prev, .next, .text {font-size: 1em}
   
@@ -517,6 +544,17 @@ footer h3
     }
 
 /*nos services*/
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .hero ul {
+        text-align: left;
+    }
+
     .two-column {
         flex-direction: column;
     }
