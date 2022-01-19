@@ -9,7 +9,6 @@ hamburgerContainer.addEventListener('click', () =>
 
 
 /*Slideshow*/
-
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -36,3 +35,9 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+/*Contact form*/
+function submitForm() {
+window.location.assign("success.html");
+}
+

@@ -351,6 +351,9 @@ p {
     background-color: lightskyblue;
 }
 
+#success-message {
+    justify-content: center;
+}
 /*Sections de page mentions légales de page politique de confidentialité*/
 
 /* Pied de page (footer) */
