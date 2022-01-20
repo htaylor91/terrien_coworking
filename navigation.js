@@ -36,8 +36,3 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-/*Contact form*/
-function submitForm() {
-window.location.assign("success.html");
-}
-

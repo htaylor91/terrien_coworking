@@ -39,7 +39,8 @@
         
         <section class="hero contact">
              
-                <form method="post" action="https://script.google.com/macros/s/AKfycbyrhLLIwElPJw2RWx4JdxEm1a29wTeRSKUi-odcRjni-twWrYK1Y5sVVU6pwRJN0wm9Ig/exec"> <!--remplace traitement avec un vrai fichier pour les réponses-->
+                <form id="form" method="post" action="https://script.google.com/macros/s/AKfycbyrhLLIwElPJw2RWx4JdxEm1a29wTeRSKUi-odcRjni-twWrYK1Y5sVVU6pwRJN0wm9Ig/exec"
+                onsubmit="myFunction()">
                     
                     <p>
                         
@@ -80,7 +81,7 @@
                     
                     </p>
                     
-                    <input type="submit" value="Envoyer" onclick="submitForm()"/>
+                    <input type="submit" value="Envoyer" >
                 </form>
 
             </section>
@@ -108,4 +109,9 @@
 
     </body> 
     <script src='navigation.js' type="text/javascript"></script>
+    <script>
+        function myFunction() {
+          alert("The form was submitted");
+        }
+        </script>
 </html>
