@@ -20,6 +20,8 @@ h1 {
 
 h2 {
     font-size: 2.1em;
+    text-decoration: underline;
+    text-decoration-color: #D81E5B;
 }
 
 .centered-header {
@@ -49,7 +51,7 @@ p {
 
 .logo {
     height: 100%;
-    width: 300%;
+    width: 100%;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -97,14 +99,6 @@ p {
 
 /* Slideshow*/      
 
-/*#slideshow-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: center;
-    margin: auto;
-}*/
-
 .mySlides {display: none}
 
 .mySlides {
@@ -115,8 +109,8 @@ p {
 }
 
 .slideshow-image {
-    height: 50vh;
-    max-width: 50vw;
+    height: 60vh;
+    max-width: 60vw;
 }
 
 /* Slideshow navigation buttons */
@@ -245,6 +239,10 @@ p {
     flex: 1;
 }
 
+.hero-container-one > h2 {
+    text-align: center;
+}
+
 .hero-container-two {
     display: flex;
     flex-direction: row;
@@ -256,11 +254,37 @@ p {
     font-size: 2em;
     color: #D81E5B;
     font-weight: bold;
+    text-align: center;
 }
 
 .list_services {
-    list-style-type:disc;
+    list-style: none;
+    background-color: #12122B;
+    border: 0.5em solid #12122B;
+    border-radius: 1em;
+    text-align: center;
+    padding-left: 0px;
+    font-weight: 900;
 }
+
+.list_services li a:link, .list_services li a:visited {
+    background-color: #D81E5B;
+    color: #F1F1F9;
+    font-size: 1.2em;
+    border: 0.5em solid #12122B;
+    border-radius: 1em;
+    padding: 0.5em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-shadow: 2px 2px 2px #12122B;
+  }
+
+.list_services li a:hover, .list_services li a:active {
+    background-color: #12122B;
+    color: #F1F1F9;
+    border: 0.5em solid #D81E5B;
+  }
 
 .two-column {
     display:flex;
@@ -357,41 +381,23 @@ p {
 /*Sections de page mentions légales de page politique de confidentialité*/
 
 /* Pied de page (footer) */
-.footer
-{
+.footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: center;
     background-color: #12122B;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    border: 0.2em solid transparent;
     text-align: center;
-}
-
-footer p, footer ul, footer a
-{
+    color: #F1F1F9;
     font-size: 0.8em;
-    color: #F1F1F9;
 }
 
-footer h2 a {
-    text-decoration: none;
+footer h3 {
     font-size: 1.2em;
-}
-
-footer h2 a:hover {
-    text-decoration: none;
-    font-size: 1.2em;
-    color: #D81E5B;
-}
-
-footer h3
-{
-    font-size: 1.1em;
     color: #F1F1F9;
+    margin-top: 0.5em;
+    margin-bottom: 0.3em;
 }
 
 /*planifier une réunion div */
@@ -400,24 +406,47 @@ footer h3
     display: flex;
     justify-content: center;
     background-color: #D81E5B;
-    color:#12122B;
-    margin-top: 0.3em;
-    margin-bottom: 0.3em;
-    border: 0.2em solid transparent;
-    padding: 1em;
-    font-size: 2.5em;
-    width: 30%;
+    color: #F1F1F9;
+    font-weight: bold;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 2em;
+    border: 0.5em solid #D81E5B;
+    border-radius: 4em;
+    text-shadow: 1px 1px 1px #12122B;
 }
 
 .footer_button a {
-    color:#12122B;
+    color:#F1F1F9;
     font-weight: bold;
     text-decoration: none;
     text-align: center;
 }
 
 .footer_button a:hover {
+    color: #12122B;
+}
+
+.footer_company {
+    display: flex;
+}
+
+.footer h2 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0.3em;
     color: #F1F1F9;
+}
+
+.footer_company a:link, .footer_company a:visited {
+    color: #F1F1F9;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.footer_company a:hover, .footer_company a:active {
+    color: #D81E5B;
 }
 
 .footer_legal {
@@ -429,7 +458,11 @@ footer h3
     width: 50%;
 }
 
-.footer_legal a:hover {
+.footer_legal a:link, .footer_legal a:visited {
+    color: #F1F1F9;
+}
+
+.footer_legal a:hover, .footer_legal a:active {
     color: #D81E5B;
 }
 
@@ -442,7 +475,7 @@ footer h3
     width: 50%;
 }
 
-/* Style all font awesome icons */
+/* Style all font awesome social media icons */
 .fa {
     padding: 0.5em;
     font-size: 1.5em;
@@ -453,7 +486,7 @@ footer h3
     color: #F1F1F9;
   }
   
-  /* Add a hover effect if you want */
+  /* Social links hover*/
   .fa:hover {
     opacity: 0.7;
   }
@@ -493,8 +526,8 @@ footer h3
     }
 
     .logo {
-        width: 50%;
-        height: 50%;
+        width: 20%;
+        height: 20%;
         margin-top: 10px;
         margin-left: 10px;
     }
@@ -525,7 +558,12 @@ footer h3
 
 /*slideshow*/
 
-.prev, .next, .text {font-size: 1em}
+.prev, .next, .text {font-size: 1.5em}
+
+.slideshow-image {
+    height: 70vh;
+    max-width: 70vw;
+}
   
 /*.hero*/
 
@@ -574,6 +612,7 @@ footer h3
 /*footer*/
     .footer_button {
         margin: auto;
+        margin-top: 0.5em;
         width: 80%;
     }
 
