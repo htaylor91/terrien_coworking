@@ -15,6 +15,8 @@ h1 {
     font-size: 3em;
     padding: 0em;
     margin: 0em;
+    margin-bottom: 5px;
+    margin-top: 5px;
     text-align: center;
     color: #D81E5B;
 }
@@ -199,7 +201,8 @@ p {
     display: flex;
     position: center;
     margin-top: 1em;
-    padding: 0.8em;
+    padding-left: 2em;
+    padding-right: 2em;
     width: 100%
  }
 
@@ -214,11 +217,11 @@ p {
     flex-direction:row;
     position: center;
     width: 100%;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 .article {
-    padding-right: 1em;
-    padding-left: 1em;
     flex: 1;
 }
 
@@ -238,8 +241,6 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 100%
-    
 }
 
 .hero-container-one, .hero-container-two {
@@ -251,6 +252,11 @@ p {
     background-color: #12122B;
     border: 0.5em solid #12122B;
     border-radius: 1em;
+}
+
+.description_services h2 {
+    padding: 0px;
+    margin: 0px;
 }
 
 .description_services {
@@ -267,6 +273,7 @@ p {
     font-weight: bold;
     text-align: center;
 }
+/*List of services on "Nos Services" page*/
 
 .list_services {
     list-style: none;
@@ -279,10 +286,9 @@ p {
     background-color: #D81E5B;
     color: #F1F1F9;
     font-size: 1.2em;
-    border: 0.5em solid #12122B;
+    border: 0.3em solid #12122B;
     border-radius: 1em;
-    padding: 0.5em;
-    text-align: center;
+    padding: 0.2em;
     text-decoration: none;
     display: inline-block;
     text-shadow: 2px 2px 2px #12122B;
@@ -291,14 +297,15 @@ p {
 .list_services li a:hover, .list_services li a:active {
     background-color: #12122B;
     color: #F1F1F9;
-    border: 0.5em solid #D81E5B;
+    border: 0.3em solid #D81E5B;
   }
 
 .two-column {
     display:flex;
     flex-direction:row;
     position: center;
-    width: auto;
+    margin-bottom: 10px;
+    
 }
 
 .service-description {
@@ -385,9 +392,21 @@ p {
 #success-message {
     justify-content: center;
 }
+
+/*Google Form styling*/
+.contact-form-container {
+    display: flex;
+    position: center;
+    margin-top: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    width: 100%;
+    height: 60vh;
+}
+
 /*Sections de page mentions légales de page politique de confidentialité*/
 
-/* Pied de page (footer) */
+/* FOOTER */
 .footer {
     display: flex;
     flex-direction: column;
@@ -577,6 +596,11 @@ footer h3 {
 }
   
 /*.hero*/
+.hero {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
 
     .two-column-home {
         flex-direction: column;
@@ -592,19 +616,15 @@ footer h3 {
         flex-direction: column;
         margin: auto;
         width: 100%;
-        height: auto;
     }
 
 /*nos services*/
 
-    .hero {
+    .service-hero {
         flex-direction: column;
         text-align: center;
         align-items: center;
-    }
-
-    .hero ul {
-        text-align: left;
+    
     }
 
     .two-column {
@@ -621,12 +641,10 @@ footer h3 {
     }
 
 /*footer*/
-    .footer_button {
-        margin: auto;
-        margin-top: 0.5em;
-        width: 80%;
-    }
 
+    .footer_company > h2 {
+        font-size: 1.5em;
+    }
     .footer_legal {
         margin: auto;
         width: 100%;
