@@ -201,8 +201,8 @@ p {
     display: flex;
     position: center;
     margin-top: 1em;
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 10px;
+    padding-right: 10px;
     width: 100%
  }
 
