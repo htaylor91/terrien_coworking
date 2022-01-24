@@ -55,8 +55,10 @@ Heading modifications
     text-align: center;
 }
 
-.remove-underline {
-    text-decoration: none;
+.topic-sentence {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
 }
 
 /*
@@ -555,6 +557,10 @@ h3 {
 
 p {
     font-size: 1.2em;
+}
+
+.topic-sentence {
+    font-size: 1.4em;
 }
 
 /*Mobile navigation*/
