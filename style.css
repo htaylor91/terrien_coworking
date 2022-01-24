@@ -1,4 +1,7 @@
-/* Eléments principaux de la page (largeur du site, fond, couleur par défaut du texte) */
+/* 
+Baseline CSS for all pages
+*/
+
 * {
     box-sizing: border-box;
 }
@@ -8,13 +11,12 @@ body {
     background-color: #F1F1F9;
     color: #12122B;
     margin: 0;
-    
 }
 
 h1 {
     font-size: 3em;
-    padding: 0em;
-    margin: 0em;
+    padding: 0px;
+    margin: 0px;
     margin-bottom: 5px;
     margin-top: 5px;
     text-align: center;
@@ -22,13 +24,11 @@ h1 {
 }
 
 h2 {
-    font-size: 2.1em;
+    font-size: 1.9em;
+    padding: 0px;
+    margin: 0px;
     text-decoration: underline;
     text-decoration-color: #D81E5B;
-}
-
-.centered-header {
-    text-align: center;
 }
 
 h3 {
@@ -36,10 +36,38 @@ h3 {
 }
 
 p {
-    font-size: 1.5em;;
+    font-size: 1.5em;
 }
 
-/* Navigation bar - En-tête et liens de navigation.*/
+.hero {
+    display: flex;
+    margin-top: 10px;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%
+}
+
+/*
+Heading modifications
+*/
+
+.centered-header {
+    text-align: center;
+}
+
+.remove-underline {
+    text-decoration: none;
+}
+
+/*Paragraph modifications*/
+
+p.shifted {
+    margin-left: 1.6em;
+}
+
+/*
+Navigation bar (Navbar)
+*/
 
 .nav {
     overflow: hidden;
@@ -86,7 +114,6 @@ p {
     border: 0;
     color: #F1F1F9;
     cursor: pointer;
-
 }
 
 #hamburger-container:focus {
@@ -100,9 +127,13 @@ p {
     margin-top: 4px;
 }
 
-/* Slideshow*/      
+/*
+Slideshow (Page - "Accueil")
+*/      
 
-.mySlides {display: none}
+.mySlides {
+    display: none
+}
 
 .mySlides {
     display: flex;
@@ -116,8 +147,7 @@ p {
     max-width: 60vw;
 }
 
-/* Slideshow navigation buttons */
-
+/* Slideshow - Navigation buttons */
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -130,22 +160,21 @@ p {
     font-size: 2em;
     transition: 0.6s ease;
     user-select: none;
-  }
+}
   
 .next {
-  right: 0;
+    right: 0;
 }
 
 .prev {
     left: 0;
-  }
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: #d71d5bcc;
 }
 
-/* Caption text */
+.prev:hover, .next:hover {
+    background-color: #d71d5bcc;
+}
+
+/* Slideshow - Caption text */
 .text {
     color: black;
     font-size: 1.3em;
@@ -154,77 +183,65 @@ p {
     width: 100%;
     text-align: center;
     justify-content: center;
-  }
+}
 
-/* The dots/bullets/indicators */
-
+/* Slideshow - Navigation bullets */
 .dot-container {
     display: flex;
     justify-content: center;
 }
 
 .dot {
-  cursor: pointer;
-  height: 1.1em;
-  width: 1.1em;
-  margin: 0 2px;
-  background-color: #12122B;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    cursor: pointer;
+    height: 1.1em;
+    width: 1.1em;
+    margin: 0 2px;
+    background-color: #12122B;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #12122B;
+    background-color: #12122B;
 }
 
-/* Fading animation */
+/* Slideshow - Fading animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+    from {opacity: .4} 
+    to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+    from {opacity: .4} 
+    to {opacity: 1}
 }
 
-/*autre Sections de page d'accueil*/
-.hero {
-    display: flex;
-    position: center;
-    margin-top: 1em;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 100%
- }
-
-.contact {
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
- }
+/*
+Page - Accueil 
+*/
 
 .two-column-home {
-    display:flex;
-    flex-direction:row;
+    display: flex;
+    flex-direction: row;
     position: center;
     width: 100%;
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .article {
     flex: 1;
 }
 
+/*Google Map*/
 .article_map {
     border: 1em transparent solid;
     display: flex;
@@ -235,14 +252,18 @@ p {
     list-style-type: none;
 }
 
-/*Sections de page de nos services*/
+/*
+ Page - "Nos Services 
+*/
 
+/* Nos Services - two column hero container */
 .service-hero {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
+/* Nos Services - two containers within the hero container */
 .hero-container-one, .hero-container-two {
     display: flex;
     flex-direction: row;
@@ -254,6 +275,7 @@ p {
     border-radius: 1em;
 }
 
+/* Nos services - hero container one */
 .description_services h2 {
     padding: 0px;
     margin: 0px;
@@ -273,8 +295,8 @@ p {
     font-weight: bold;
     text-align: center;
 }
-/*List of services on "Nos Services" page*/
 
+/* Nos Services - hero container two */
 .list_services {
     list-style: none;
     text-align: center;
@@ -292,20 +314,20 @@ p {
     text-decoration: none;
     display: inline-block;
     text-shadow: 2px 2px 2px #12122B;
-  }
+}
 
 .list_services li a:hover, .list_services li a:active {
     background-color: #12122B;
     color: #F1F1F9;
     border: 0.3em solid #D81E5B;
-  }
+}
 
+/* Nos Services - Two column flexbox --- Left: service pictures ; Right: service descriptions */  
 .two-column {
     display:flex;
     flex-direction:row;
     position: center;
     margin-bottom: 10px;
-    
 }
 
 .service-description {
@@ -320,7 +342,7 @@ p {
 }
 
 .service-picture-container {
-    flex: 1; /*editing this out makes img small and left*/
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -329,71 +351,14 @@ p {
 .service-picture {
     width: 100%;
     height: auto;
-    max-width: 60vh;
+    max-width: 30vw;
 }
 
-/*Sections de page contactez-nous*/
+/* 
+Page - Contactez-nous 
+*/
 
-.fieldset {
-    color: #12122B;
-    font-family: Verdana;
-    font-size: 1.3em;
-}
-
-.legend {
-    background-color: #F1F1F9;
-}
-
-#nom {
-    background-color: skyblue;
-}
-
-#prenom {
-    background-color: skyblue;
-}
-
-#email {
-    background-color: skyblue;
-}
-
-#tel {
-    background-color: skyblue;
-}
-
-#address {
-    background-color: skyblue;
-}
-
-#sujet {
-
-    background-color: rgb(187, 187, 243);
-
-}
-
-#message {
-    background-color: skyblue;
-}
-
-:required
-{
-    background-color: #F1F1F9;
-}
-
-:invalid
-{
-    background-color: #F1F1F9;
-}
-
-:focus
-{
-    background-color: lightskyblue;
-}
-
-#success-message {
-    justify-content: center;
-}
-
-/*Google Form styling*/
+/* Google Form - Container */
 .contact-form-container {
     display: flex;
     position: center;
@@ -404,9 +369,10 @@ p {
     height: 60vh;
 }
 
-/*Sections de page mentions légales de page politique de confidentialité*/
+/*
+FOOTER - Container 
+*/
 
-/* FOOTER */
 .footer {
     display: flex;
     flex-direction: column;
@@ -419,6 +385,7 @@ p {
     font-size: 0.8em;
 }
 
+/* Footer - text - "Suivez-Nous" */
 footer h3 {
     font-size: 1.2em;
     color: #F1F1F9;
@@ -426,9 +393,7 @@ footer h3 {
     margin-bottom: 0.3em;
 }
 
-/*planifier une réunion div */
-
-
+/* Footer - Button "planifier une réunion" - Container */
 .footer_button  {
     display: flex;
     color: #F1F1F9;
@@ -437,6 +402,7 @@ footer h3 {
     margin-top: 0.5em;
 }
 
+/* Footer - Button "planifier une réunion" - Link effects */
 .footer_button a:link, .footer_button a:visited {
     color:#F1F1F9;
     font-weight: bold;
@@ -457,10 +423,12 @@ footer h3 {
     border: 0.5em solid #D81E5B;
 }
 
+/* Footer - Link to "Page d'accueil" - Container */
 .footer_company {
     display: flex;
 }
 
+/* Footer - Link to "Page d'accueil" (click on company name) - Link effects */
 .footer h2 {
     margin: 0;
     padding: 0;
@@ -479,6 +447,7 @@ footer h3 {
     color: #D81E5B;
 }
 
+/* Footer - Links to "Mentions Légales and "Politique de Confidentialité" - Container */
 .footer_legal {
     display: flex;
     flex-direction: column;
@@ -488,6 +457,7 @@ footer h3 {
     width: 50%;
 }
 
+/* Footer - Links to "Mentions Légales and "Politique de Confidentialité" - link effects */
 .footer_legal a:link, .footer_legal a:visited {
     color: #F1F1F9;
 }
@@ -496,6 +466,7 @@ footer h3 {
     color: #D81E5B;
 }
 
+/* Footer - Social media icons - Container*/
 .footer_social {
     display: flex;
     flex-direction: row;
@@ -505,7 +476,7 @@ footer h3 {
     width: 50%;
 }
 
-/* Style all font awesome social media icons */
+/* Social media icons */
 .fa {
     padding: 0.5em;
     font-size: 1.5em;
@@ -516,12 +487,12 @@ footer h3 {
     color: #F1F1F9;
   }
   
-  /* Social links hover*/
+  /* Social media icons - hover effect */
   .fa:hover {
     opacity: 0.7;
   }
   
-  /* Set a specific color for each brand */
+  /* Social media icons - colors */
   
   .fa-github {
     background: #000000;
@@ -543,116 +514,139 @@ footer h3 {
     background: #8a3ab9;
   }
 
-@media all and (max-width: 900px) {
+/*
+Media Queries
+*/
 
-/*navigation*/
-    .nav {
-        flex-direction: column;
-    }
+@media all and (max-width: 992px) {
 
-    .nav .container-logo {
-        width: 100%;
-        justify-content: center;
-    }
+/*Baseline CSS for mobile view - all pages */
+h1 {
+    font-size: 1.9em;
+}
 
-    .logo {
-        width: 20%;
-        height: 20%;
-        margin-top: 10px;
-        margin-left: 10px;
-    }
+h2 {
+    font-size: 1.6em;
+    text-align: center;
+}
 
-    #hamburger-container {
-        display: block;
-        position: absolute;
-        right: 15px;
-        top: 15px;
-    }
+h3 {
+    font-size: 1.3em;
+}
 
-    .nav-menu {
-        list-style-type: none;
-        width: 100%;
-        text-align: center;
-        padding-top: 10px;
-        display: none;
-    }
+p {
+    font-size: 1.2em;
+}
 
-    .nav-menu .list {
-        display: block;
-        border-top: 1px solid transparent;
-    }
+/*Mobile navigation*/
+.nav {
+    flex-direction: column;
+}
 
-    .active {
-        display: block;
-    }
+.nav .container-logo {
+    width: 100%;
+    justify-content: center;
+}
 
-/*slideshow*/
+.logo {
+    width: 20%;
+    height: 20%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
 
-.prev, .next, .text {font-size: 1.5em}
+#hamburger-container {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.nav-menu {
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    display: none;
+}
+
+.nav-menu .list {
+    display: block;
+    border-top: 1px solid transparent;
+}
+
+.active {
+    display: block;
+}
+
+/*Mobile slideshow*/
+.prev, .next, .text {
+    font-size: 1.5em
+}
 
 .slideshow-image {
-    height: 70vh;
-    max-width: 70vw;
+    height: 50vh;
+    max-width: 90vw;
 }
-  
-/*.hero*/
+
+/*Mobile hero sections*/
 .hero {
+    flex-direction: column;
+    align-items: center;
+}
+
+.two-column-home {
+    flex-direction: column;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+}
+
+.article_map {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+}
+
+/*Mobile page "Nos services"*/
+.service-hero {
     flex-direction: column;
     text-align: center;
     align-items: center;
 }
 
-    .two-column-home {
-        flex-direction: column;
-    }
+.two-column {
+    flex-direction: column;
+}
 
-    .article {
-        display: flex;
-        flex-direction: column;
-    }
+.service-picture {
+    width: 100%;
+    height: auto;
+    max-width: 80vw;
+}
 
-    .article_map {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        width: 100%;
-    }
+.service-description {
+    text-align: center;
+}
 
-/*nos services*/
+/*Mobile Footer*/
+.footer_company > h2 {
+    font-size: 1.5em;
+}
+.footer_legal {
+    margin: auto;
+    width: 100%;
+}
 
-    .service-hero {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    
-    }
-
-    .two-column {
-        flex-direction: column;
-    }
-
-    .service-picture {
-        width: 100%;
-        height: auto;
-    }
-
-    .service-description {
-       text-align: center;
-    }
-
-/*footer*/
-
-    .footer_company > h2 {
-        font-size: 1.5em;
-    }
-    .footer_legal {
-        margin: auto;
-        width: 100%;
-    }
-    
-    .footer_social {
-        margin: auto;
-        width: 100%;
-    }
+.footer_social {
+    margin: auto;
+    width: 100%;
+}
 
 }
+/*
+End media queries
+*/
