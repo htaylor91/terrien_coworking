@@ -59,7 +59,9 @@ Heading modifications
     text-decoration: none;
 }
 
-/*Paragraph modifications*/
+/*
+Paragraph modifications
+*/
 
 p.shifted {
     margin-left: 1.6em;
@@ -250,6 +252,23 @@ Page - Accueil
 
 .list_directions {
     list-style-type: none;
+}
+
+.list_directions a:link, .list_directions a:visited {
+    color: #12122B;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.5em;
+    border: 0.3em solid transparent;
+    border-radius: 0.3em;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.list_directions a:hover, .list_directions a:hover {
+    background-color: #12122B;
+    color: #D81E5B;
+    border-radius: 0.3em;
 }
 
 /*
@@ -615,7 +634,6 @@ p {
 .service-hero {
     flex-direction: column;
     text-align: center;
-    align-items: center;
 }
 
 .two-column {
