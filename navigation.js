@@ -1,14 +1,19 @@
-/*Mobile navigation / hamburger button*/
+/*
+Mobile navigation / hamburger button
+*/
+
 const hamburgerContainer = document.getElementById("hamburger-container");
 const navigationMenu = document.getElementById("navigation-menu");
         
-hamburgerContainer.addEventListener('click', () => 
-                                    {
-                                        navigationMenu.classList.toggle('active');
-                                    })
+hamburgerContainer.addEventListener('click', () => {
+  navigationMenu.classList.toggle('active');
+})
 
 
-/*Slideshow*/
+/*
+Slideshow
+*/
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
