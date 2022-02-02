@@ -25,10 +25,12 @@ $ cd terrien_working
 
 ## Utilisation
 
-Il faut un compte pour chacun de ces services pour récolter les demandes sur les pages:
+Pour accéder au site sur votre système local, ouvrez le fichier "home.html" dans templates/home.html depuis la racine du projet.
 
-- Planifier une visite [Calendly](https://calendly.com)
-- Contactez-nous [Google Forms](https://docs.google.com/forms)
+Il faut un compte pour chacun de ces services pour récolter les demandes :
+
+- [Calendly](https://calendly.com)
+- [Google Forms](https://docs.google.com/forms)
 
 ## Construit avec
 - HTML5
