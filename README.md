@@ -23,26 +23,12 @@ $ git clone https://github.com/htaylor91/terrien_coworking.git
 $ cd terrien_working
 ```
 
-### Pour le client:
+## Utilisation
 
-## Utilisation:
+Il faut un compte pour chacun de ces services pour récolter les demandes:
 
-vidéos/gifs d'exemples de fonctionnalités
-
-### Planifier une visite:
-
-Instructions pour l'accès à Calendly
-
-```sh
-video here
-```
-
-### Contactez-nous:
-Instructions pour accéder aux données des formulaires Google
-
-```sh
-video here
-```
+1. [Calendly](https://calendly.com)
+2. [Google Forms](https://docs.google.com/forms)
 
 ## Construit avec
 - HTML5
