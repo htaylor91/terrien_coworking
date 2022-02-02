@@ -1,28 +1,23 @@
-# Terrien_Coworking_TAYLOR_Heather
-## Projet personnel de programmation
+# Projet personnel de programmation_TAYLOR_Heather
 
-### Le site vitrine de Terrien Coworking
+Le site vitrine de Terrien Coworking
 
 ## Description
 
-Pour attirer de nouveaux clients, l’entreprise a besoin d’un site internet pour :
-- présenter les bureaux à la location (mensuelle)
+L’entreprise Terrien Coworking a besoin d’un site internet pour pour attirer de nouveaux clients.
+
+Le site doit être accessible depuis un ordinateur ou un téléphone portable, et
+- présenter les bureaux à la location
 - présenter les services associés
-- récolter les demandes de visites ou locations
+- récolter les demandes de visites avec [Calendly](https://calendly.com)
+- récolter les demandes de locations avec [Google Forms](https://docs.google.com/forms)
 
-La mesure du succès
-Le succès du projet sera mesuré par le fait que le site...
-présente l'espace physique de coworking aux clients potentiels
-présente les services offerts dans l'espace de coworking
-permet aux clients potentiels de programmer une visite (chez Calendly)
-permet aux clients de contacter le propriétaire pour louer un bureau dans l'espace de coworking (chez Google Forms)
-est accessible depuis un téléphone ou un ordinateur via l’adresse
+## Installation
 
+### Pour les développeurs
 
-## Installation:
+Clonez la source localement
 
-### Pour les développeurs (windows 10):
-#### Clonez la source localement:
 ```sh
 $ git clone https://github.com/htaylor91/terrien_coworking.git
 $ cd terrien_working
@@ -49,12 +44,15 @@ Instructions pour accéder aux données des formulaires Google
 video here
 ```
 
-## Built with:
-### HTML5
+## Construit avec
+- HTML5
+- CSS3
+- JavaScript
 
-### CSS3
+## REMERCIEMENTS
+### Cours et tutoriels qui m'ont aidé à réaliser ce projet
 
-### JavaScript
-
-## Crédits
-Liens vers des tutoriaux
+- [HTML5 & CSS3 Cours](https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3)
+- [Responsive Navbar Tutorial](https://youtu.be/mh36Kts-wX8) 
+- [Slideshow Tutorial](https://www.w3schools.com/howto/howto_js_slideshow.asp)
+- [Font Awesome Icons](https://fontawesome.com/v5.15/icons?d=gallery&p=2)
