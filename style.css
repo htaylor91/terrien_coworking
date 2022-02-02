@@ -82,6 +82,8 @@ Navigation bar (Navbar)
     justify-content: space-between;
     align-items: center;
     font-size: 1.3em;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .logo {
@@ -118,6 +120,8 @@ Navigation bar (Navbar)
     border: 0;
     color: #F1F1F9;
     cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
 #hamburger-container:focus {
@@ -203,7 +207,7 @@ Slideshow (Page - "Accueil")
     background-color: #12122B;
     border-radius: 50%;
     display: inline-block;
-    transition: background-color 0.6s ease;
+    transition: "background-color" 0.6s ease;
 }
 
 .active, .dot:hover {
@@ -252,6 +256,8 @@ Page - Accueil
     flex: 1;
 }
 
+/*Links- driving and transit directions*/
+
 .list_directions {
     list-style-type: none;
 }
@@ -267,14 +273,14 @@ Page - Accueil
     display: inline-block;
 }
 
-.list_directions a:hover, .list_directions a:hover {
+.list_directions a:hover, .list_directions a:active {
     background-color: #12122B;
     color: #D81E5B;
     border-radius: 0.3em;
 }
 
 /*
- Page - "Nos Services 
+ Page - "Nos Services" 
 */
 
 /* Nos Services - two column hero container */
@@ -495,6 +501,7 @@ footer h3 {
     align-items: center;
     color: #F1F1F9;
     width: 50%;
+    margin-bottom: 10px;
 }
 
 /* Social media icons */
@@ -560,7 +567,9 @@ p {
 }
 
 .topic-sentence {
-    font-size: 1.4em;
+    font-size: 1.3em;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 /*Mobile navigation*/
@@ -668,6 +677,7 @@ p {
 .footer_social {
     margin: auto;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 }
