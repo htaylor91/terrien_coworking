@@ -25,18 +25,19 @@ $ cd terrien_working
 
 ## Utilisation
 
-Il faut un compte pour chacun de ces services pour récolter les demandes:
+Il faut un compte pour chacun de ces services pour récolter les demandes sur les pages:
 
-1. [Calendly](https://calendly.com)
-2. [Google Forms](https://docs.google.com/forms)
+- Planifier une visite [Calendly](https://calendly.com)
+- Contactez-nous [Google Forms](https://docs.google.com/forms)
 
 ## Construit avec
 - HTML5
 - CSS3
 - JavaScript
 
-## REMERCIEMENTS
-### Cours et tutoriels qui m'ont aidé à réaliser ce projet
+## Remerciements
+
+Cours et tutoriels qui m'ont aidé à réaliser ce projet:
 
 - [HTML5 & CSS3 Cours](https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3)
 - [Responsive Navbar Tutorial](https://youtu.be/mh36Kts-wX8) 
